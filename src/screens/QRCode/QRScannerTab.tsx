@@ -5,12 +5,12 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, StyleSheet, Linking, Platform } from 'react-native';
-import { useTheme } from '../../../hooks/useTheme';
-import { Button } from '../../../components/ui/Button';
-import { Card } from '../../../components/ui/Card';
-import { IconButton } from '../../../components/ui/IconButton';
-import { EmptyState } from '../../../components/common/EmptyState';
-import { parseScannedQRCode } from '../../../utils/qrcode';
+import { useTheme } from '../../hooks/useTheme';
+import { Button } from '../../components/ui/Button';
+import { Card } from '../../components/ui/Card';
+import { IconButton } from '../../components/ui/IconButton';
+import { EmptyState } from '../../components/common/EmptyState';
+import { parseScannedQRCode } from '../../utils/qrcode';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 interface ScanResult {
@@ -101,10 +101,7 @@ export const QRScannerTab: React.FC = () => {
         {/* Demo button for testing UI */}
         <View style={styles.demoContainer}>
           <Text
-            style={[
-              styles.demoText,
-              { color: theme.colors.textSecondary },
-            ]}
+            style={[styles.demoText, { color: theme.colors.textSecondary }]}
           >
             For demo purposes:
           </Text>
@@ -117,12 +114,7 @@ export const QRScannerTab: React.FC = () => {
 
         {/* Show scan result if available */}
         {scanResult && (
-          <Card
-            style={[
-              styles.resultCard,
-              { marginTop: theme.spacing.lg },
-            ]}
-          >
+          <Card style={{ ...styles.resultCard, marginTop: theme.spacing.lg }}>
             <Text
               style={[
                 styles.resultLabel,

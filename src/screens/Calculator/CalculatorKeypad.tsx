@@ -5,13 +5,9 @@
 
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { useTheme } from '../../../hooks/useTheme';
+import { useTheme } from '../../hooks/useTheme';
 import { CalculatorButton } from './CalculatorButton';
-import {
-  CalculatorAction,
-  CalculatorOperator,
-  CalculatorButtonType,
-} from '../../../types/calculator';
+import { CalculatorAction, CalculatorButtonType } from '../../types/calculator';
 
 interface CalculatorKeypadProps {
   onAction: (action: CalculatorAction) => void;
@@ -119,9 +115,7 @@ export const CalculatorKeypad: React.FC<CalculatorKeypadProps> = ({
   const { theme } = useTheme();
 
   return (
-    <View
-      style={[styles.container, { paddingHorizontal: theme.spacing.sm }]}
-    >
+    <View style={[styles.container, { paddingHorizontal: theme.spacing.sm }]}>
       {BUTTONS.map((row, rowIndex) => (
         <View key={`row-${rowIndex}`} style={styles.row}>
           {row.map((button, buttonIndex) => (

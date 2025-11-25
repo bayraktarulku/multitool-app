@@ -4,7 +4,6 @@
  */
 
 import React from 'react';
-import { View, StyleSheet, useWindowDimensions } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { SafeAreaContainer, ScreenHeader } from '../../components';
 import { useTheme } from '../../hooks/useTheme';
@@ -16,7 +15,6 @@ const Tab = createMaterialTopTabNavigator<QRCodeTabParamList>();
 
 export const QRCodeScreen: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const { width } = useWindowDimensions();
 
   return (
     <SafeAreaContainer edges={['top']}>
@@ -74,11 +72,5 @@ export const QRCodeScreen: React.FC = () => {
     </SafeAreaContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default QRCodeScreen;

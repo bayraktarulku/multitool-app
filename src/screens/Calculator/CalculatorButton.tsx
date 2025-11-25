@@ -6,8 +6,8 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, ViewStyle } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useTheme } from '../../../hooks/useTheme';
-import { CalculatorButtonType } from '../../../types/calculator';
+import { useTheme } from '../../hooks/useTheme';
+import { CalculatorButtonType } from '../../types/calculator';
 
 interface CalculatorButtonProps {
   label: string;
@@ -52,22 +52,20 @@ export const CalculatorButton: React.FC<CalculatorButtonProps> = ({
     }
   };
 
-  const buttonStyles: ViewStyle[] = [
-    styles.button,
-    {
-      backgroundColor: getBackgroundColor(),
-      borderRadius: theme.borderRadius.lg,
-      flex: span,
-      marginHorizontal: span > 1 ? 0 : 4,
-    },
-    style,
-  ];
+  const buttonStyle: ViewStyle = {
+    ...styles.button,
+    backgroundColor: getBackgroundColor(),
+    borderRadius: theme.borderRadius.lg,
+    flex: span,
+    marginHorizontal: span > 1 ? 0 : 4,
+    ...style,
+  };
 
   // Render backspace icon
   if (label === '⌫') {
     return (
       <TouchableOpacity
-        style={buttonStyles}
+        style={buttonStyle}
         onPress={onPress}
         activeOpacity={0.7}
         accessibilityLabel="Backspace"
@@ -80,7 +78,7 @@ export const CalculatorButton: React.FC<CalculatorButtonProps> = ({
 
   return (
     <TouchableOpacity
-      style={buttonStyles}
+      style={buttonStyle}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityLabel={`${label} button`}

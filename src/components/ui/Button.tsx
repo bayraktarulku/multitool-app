@@ -104,27 +104,25 @@ export const Button: React.FC<ButtonProps> = ({
 
   const sizeStyles = getSizeStyles();
 
-  const buttonStyles: ViewStyle[] = [
-    styles.button,
-    {
-      backgroundColor: getBackgroundColor(),
-      borderRadius: theme.borderRadius.md,
-    },
-    sizeStyles.button,
-    variant === 'outline' && {
+  const buttonStyles: ViewStyle = {
+    ...styles.button,
+    backgroundColor: getBackgroundColor(),
+    borderRadius: theme.borderRadius.md,
+    ...sizeStyles.button,
+    ...(variant === 'outline' && {
       borderWidth: 1,
       borderColor: theme.colors.primary,
-    },
-    fullWidth && styles.fullWidth,
-    style,
-  ];
+    }),
+    ...(fullWidth && styles.fullWidth),
+    ...style,
+  };
 
-  const textStyles: TextStyle[] = [
-    styles.text,
-    { color: getTextColor() },
-    sizeStyles.text,
-    textStyle,
-  ];
+  const combinedTextStyles: TextStyle = {
+    ...styles.text,
+    color: getTextColor(),
+    ...sizeStyles.text,
+    ...textStyle,
+  };
 
   return (
     <TouchableOpacity
@@ -139,7 +137,7 @@ export const Button: React.FC<ButtonProps> = ({
       {loading ? (
         <ActivityIndicator color={getTextColor()} size="small" />
       ) : (
-        <Text style={textStyles}>{title}</Text>
+        <Text style={combinedTextStyles}>{title}</Text>
       )}
     </TouchableOpacity>
   );

@@ -4,16 +4,10 @@
  */
 
 import React from 'react';
-import {
-  ScrollView,
-  TouchableOpacity,
-  Text,
-  StyleSheet,
-  View,
-} from 'react-native';
+import { ScrollView, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useTheme } from '../../../hooks/useTheme';
-import { UnitCategory, UnitCategoryDefinition } from '../../../types/converter';
+import { useTheme } from '../../hooks/useTheme';
+import { UnitCategory, UnitCategoryDefinition } from '../../types/converter';
 
 interface CategorySelectorProps {
   categories: UnitCategoryDefinition[];

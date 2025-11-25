@@ -8,8 +8,7 @@ import { QRCodeType, WiFiQRData, VCardQRData } from '../types/qrcode';
 /**
  * URL validation regex
  */
-const URL_REGEX =
-  /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/i;
+const URL_REGEX = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/i;
 
 /**
  * Email validation regex
@@ -88,18 +87,20 @@ export const validateQRContent = (
         return { isValid: false, error: 'Invalid URL format' };
       }
       break;
-    case 'email':
+    case 'email': {
       const emailContent = content.replace('mailto:', '');
       if (!EMAIL_REGEX.test(emailContent)) {
         return { isValid: false, error: 'Invalid email format' };
       }
       break;
-    case 'phone':
+    }
+    case 'phone': {
       const phoneContent = content.replace('tel:', '');
       if (!PHONE_REGEX.test(phoneContent)) {
         return { isValid: false, error: 'Invalid phone format' };
       }
       break;
+    }
   }
 
   return { isValid: true };
@@ -159,10 +160,7 @@ export const formatQRContent = (content: string, type: QRCodeType): string => {
   switch (type) {
     case 'url':
       // Add https:// if not present
-      if (
-        !content.startsWith('http://') &&
-        !content.startsWith('https://')
-      ) {
+      if (!content.startsWith('http://') && !content.startsWith('https://')) {
         return `https://${content}`;
       }
       return content;

@@ -5,7 +5,6 @@
 
 import React from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { SafeAreaContainer, ScreenHeader } from '../../components';
 import { IconButton } from '../../components/ui/IconButton';
 import { useTheme } from '../../hooks/useTheme';

@@ -88,7 +88,12 @@ export const UNIT_CATEGORIES: UnitCategoryDefinition[] = [
       { id: 'cup', name: 'Cup (US)', symbol: 'cup', toBase: 0.236588 },
       { id: 'pt', name: 'Pint (US)', symbol: 'pt', toBase: 0.473176 },
       { id: 'qt', name: 'Quart (US)', symbol: 'qt', toBase: 0.946353 },
-      { id: 'floz', name: 'Fluid Ounce (US)', symbol: 'fl oz', toBase: 0.0295735 },
+      {
+        id: 'floz',
+        name: 'Fluid Ounce (US)',
+        symbol: 'fl oz',
+        toBase: 0.0295735,
+      },
       { id: 'm3', name: 'Cubic Meter', symbol: 'm³', toBase: 1000 },
     ],
   },
@@ -114,7 +119,12 @@ export const UNIT_CATEGORIES: UnitCategoryDefinition[] = [
     baseUnit: 'ms',
     units: [
       { id: 'ms', name: 'Meters per Second', symbol: 'm/s', toBase: 1 },
-      { id: 'kmh', name: 'Kilometers per Hour', symbol: 'km/h', toBase: 0.277778 },
+      {
+        id: 'kmh',
+        name: 'Kilometers per Hour',
+        symbol: 'km/h',
+        toBase: 0.277778,
+      },
       { id: 'mph', name: 'Miles per Hour', symbol: 'mph', toBase: 0.44704 },
       { id: 'kn', name: 'Knot', symbol: 'kn', toBase: 0.514444 },
       { id: 'fts', name: 'Feet per Second', symbol: 'ft/s', toBase: 0.3048 },
@@ -143,7 +153,9 @@ export const UNIT_CATEGORIES: UnitCategoryDefinition[] = [
  * @param category The category ID
  * @returns Array of unit definitions
  */
-export const getUnitsByCategory = (category: UnitCategory): UnitDefinition[] => {
+export const getUnitsByCategory = (
+  category: UnitCategory,
+): UnitDefinition[] => {
   const categoryDef = UNIT_CATEGORIES.find(c => c.id === category);
   return categoryDef?.units || [];
 };

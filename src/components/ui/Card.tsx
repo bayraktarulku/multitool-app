@@ -35,16 +35,14 @@ export const Card: React.FC<CardProps> = ({
     }
   };
 
-  const cardStyles: ViewStyle[] = [
-    styles.card,
-    {
-      backgroundColor: theme.colors.card,
-      borderRadius: theme.borderRadius.lg,
-      padding: getPadding(),
-    },
-    elevation && theme.shadow,
-    style,
-  ];
+  const cardStyles: ViewStyle = {
+    ...styles.card,
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.borderRadius.lg,
+    padding: getPadding(),
+    ...(elevation ? theme.shadow : {}),
+    ...style,
+  };
 
   return <View style={cardStyles}>{children}</View>;
 };

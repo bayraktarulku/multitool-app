@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { View, TextInput, Text, StyleSheet } from 'react-native';
-import { useTheme } from '../../../hooks/useTheme';
+import { useTheme } from '../../hooks/useTheme';
 
 interface ConversionInputProps {
   label: string;
@@ -48,9 +48,7 @@ export const ConversionInput: React.FC<ConversionInputProps> = ({
             backgroundColor: editable
               ? theme.colors.surface
               : theme.colors.background,
-            borderColor: editable
-              ? theme.colors.border
-              : theme.colors.divider,
+            borderColor: editable ? theme.colors.border : theme.colors.divider,
             borderRadius: theme.borderRadius.md,
             padding: theme.spacing.sm,
           },

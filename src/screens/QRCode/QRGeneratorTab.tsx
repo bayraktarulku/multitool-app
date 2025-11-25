@@ -3,7 +3,7 @@
  * Generate QR codes from text input
  */
 
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -13,12 +13,12 @@ import {
   Alert,
 } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
-import { useTheme } from '../../../hooks/useTheme';
-import { Button } from '../../../components/ui/Button';
-import { Card } from '../../../components/ui/Card';
-import { IconButton } from '../../../components/ui/IconButton';
-import { QR_CONFIG, MAX_INPUT_LENGTH } from '../../../constants';
-import { formatQRContent, detectQRCodeType } from '../../../utils/qrcode';
+import { useTheme } from '../../hooks/useTheme';
+import { Button } from '../../components/ui/Button';
+import { Card } from '../../components/ui/Card';
+import { IconButton } from '../../components/ui/IconButton';
+import { QR_CONFIG, MAX_INPUT_LENGTH } from '../../constants';
+import { formatQRContent, detectQRCodeType } from '../../utils/qrcode';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 export const QRGeneratorTab: React.FC = () => {
@@ -26,7 +26,6 @@ export const QRGeneratorTab: React.FC = () => {
   const [inputText, setInputText] = useState('');
   const [generatedQR, setGeneratedQR] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const qrRef = useRef<QRCode>(null);
 
   const handleGenerateQR = useCallback(() => {
     if (!inputText.trim()) {
@@ -155,23 +154,20 @@ export const QRGeneratorTab: React.FC = () => {
 
       {/* QR Code Display */}
       {generatedQR && (
-        <Card style={[styles.qrCard, { marginTop: theme.spacing.lg }]}>
+        <Card style={{ ...styles.qrCard, marginTop: theme.spacing.lg }}>
           <View
-            style={[
-              styles.qrContainer,
-              {
-                backgroundColor: theme.colors.white,
-                borderRadius: theme.borderRadius.md,
-                padding: theme.spacing.md,
-              },
-            ]}
+            style={{
+              ...styles.qrContainer,
+              backgroundColor: theme.colors.white,
+              borderRadius: theme.borderRadius.md,
+              padding: theme.spacing.md,
+            }}
           >
             <QRCode
               value={generatedQR}
               size={QR_CONFIG.DEFAULT_SIZE}
               backgroundColor={theme.colors.white}
               color={theme.colors.black}
-              getRef={(ref: QRCode) => (qrRef.current = ref)}
             />
           </View>
 

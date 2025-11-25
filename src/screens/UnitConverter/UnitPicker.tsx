@@ -13,8 +13,8 @@ import {
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useTheme } from '../../../hooks/useTheme';
-import { UnitDefinition } from '../../../types/converter';
+import { useTheme } from '../../hooks/useTheme';
+import { UnitDefinition } from '../../types/converter';
 
 interface UnitPickerProps {
   units: UnitDefinition[];

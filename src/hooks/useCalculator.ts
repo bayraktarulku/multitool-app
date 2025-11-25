@@ -3,7 +3,7 @@
  * Manages calculator state and operations
  */
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 import {
   CalculatorState,
   CalculatorOperator,
@@ -57,8 +57,7 @@ export const useCalculator = () => {
         return prev;
       }
 
-      const newDisplay =
-        prev.display === '0' ? digit : currentDisplay + digit;
+      const newDisplay = prev.display === '0' ? digit : currentDisplay + digit;
       return {
         ...prev,
         display: formatDisplayNumber(parseDisplayNumber(newDisplay)),

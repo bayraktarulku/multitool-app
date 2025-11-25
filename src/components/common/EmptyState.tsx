@@ -29,13 +29,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   const { theme } = useTheme();
 
   return (
-    <View
-      style={[
-        styles.container,
-        { padding: theme.spacing.xl },
-        style,
-      ]}
-    >
+    <View style={[styles.container, { padding: theme.spacing.xl }, style]}>
       <Icon
         name={icon}
         size={64}

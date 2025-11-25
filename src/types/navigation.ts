@@ -3,7 +3,7 @@
  */
 
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
-import { NavigatorScreenParams, RouteProp } from '@react-navigation/native';
+import { RouteProp } from '@react-navigation/native';
 import { MaterialTopTabNavigationProp } from '@react-navigation/material-top-tabs';
 
 /**

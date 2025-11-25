@@ -4,7 +4,7 @@
  */
 
 import React, { ReactNode } from 'react';
-import { View, StyleSheet, ViewStyle, StatusBar } from 'react-native';
+import { StyleSheet, ViewStyle, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '../../hooks/useTheme';
 
@@ -21,15 +21,14 @@ export const SafeAreaContainer: React.FC<SafeAreaContainerProps> = ({
 }) => {
   const { theme } = useTheme();
 
+  const containerStyle: ViewStyle = {
+    ...styles.container,
+    backgroundColor: theme.colors.background,
+    ...style,
+  };
+
   return (
-    <SafeAreaView
-      style={[
-        styles.container,
-        { backgroundColor: theme.colors.background },
-        style,
-      ]}
-      edges={edges}
-    >
+    <SafeAreaView style={containerStyle} edges={edges}>
       <StatusBar
         barStyle={theme.isDark ? 'light-content' : 'dark-content'}
         backgroundColor={theme.colors.background}

@@ -53,7 +53,8 @@ const defaultThemeContext: ThemeContextType = {
 /**
  * Theme context
  */
-export const ThemeContext = createContext<ThemeContextType>(defaultThemeContext);
+export const ThemeContext =
+  createContext<ThemeContextType>(defaultThemeContext);
 
 /**
  * Theme provider props

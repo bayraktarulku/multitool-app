@@ -26,12 +26,7 @@ export const CalculatorScreen: React.FC = () => {
         }}
       />
 
-      <View
-        style={[
-          styles.container,
-          { paddingHorizontal: theme.spacing.md },
-        ]}
-      >
+      <View style={[styles.container, { paddingHorizontal: theme.spacing.md }]}>
         {/* Display area */}
         <View style={styles.displayContainer}>
           <CalculatorDisplay
