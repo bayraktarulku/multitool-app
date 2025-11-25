@@ -1,0 +1,7 @@
+# Ignore patterns for prettier
+node_modules/
+android/
+ios/
+coverage/
+*.lock
+package-lock.json

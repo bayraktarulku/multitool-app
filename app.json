@@ -1,0 +1,44 @@
+{
+  "name": "MultiTool",
+  "displayName": "MultiTool",
+  "expo": {
+    "name": "MultiTool",
+    "slug": "multitool-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6366F1"
+    },
+    "ios": {
+      "bundleIdentifier": "com.bayraktarulku.multitool",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires camera access to scan QR codes."
+      }
+    },
+    "android": {
+      "package": "com.bayraktarulku.multitool",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6366F1"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera to scan QR codes."
+        }
+      ]
+    ]
+  }
+}

@@ -1,3 +1,38 @@
+# React Native specific
+# Build artifacts
+android/app/build/
+android/.gradle/
+android/build/
+ios/build/
+ios/Pods/
+*.apk
+*.aab
+*.ipa
+
+# Metro bundler
+.metro-health-check*
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+DerivedData/
+
+# CocoaPods
+ios/Podfile.lock
+
+# Android Studio
+.idea/
+*.iml
+local.properties
+
+# Buck build system
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
 # Logs
 logs
 *.log
