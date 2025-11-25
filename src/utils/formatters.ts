@@ -56,11 +56,3 @@ export const capitalizeFirst = (str: string): string => {
 export const removeWhitespace = (str: string): string => {
   return str.replace(/\s+/g, '');
 };
-
-export default {
-  truncateString,
-  formatTimestamp,
-  formatNumber,
-  capitalizeFirst,
-  removeWhitespace,
-};

@@ -292,11 +292,3 @@ export const formatConversionResult = (value: number): string => {
     maximumFractionDigits: decimalPlaces,
   });
 };
-
-export default {
-  UNIT_CATEGORIES,
-  getUnitsByCategory,
-  getUnit,
-  convertUnit,
-  formatConversionResult,
-};

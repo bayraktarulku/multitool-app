@@ -77,10 +77,3 @@ export const logError = (error: Error | AppError, context?: string): void => {
   const contextStr = context ? `[${context}]` : '';
   console.error(`${contextStr} Error:`, error);
 };
-
-export default {
-  createAppError,
-  ErrorCodes,
-  getErrorMessage,
-  logError,
-};

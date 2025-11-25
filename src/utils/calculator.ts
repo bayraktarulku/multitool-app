@@ -131,12 +131,3 @@ export const getOperatorSymbol = (operator: CalculatorOperator): string => {
       return operator;
   }
 };
-
-export default {
-  calculate,
-  formatDisplayNumber,
-  parseDisplayNumber,
-  isOperator,
-  isValidNumber,
-  getOperatorSymbol,
-};

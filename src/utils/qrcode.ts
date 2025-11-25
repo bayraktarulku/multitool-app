@@ -6,9 +6,9 @@
 import { QRCodeType, WiFiQRData, VCardQRData } from '../types/qrcode';
 
 /**
- * URL validation regex
+ * URL validation regex - simplified to avoid ReDoS
  */
-const URL_REGEX = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/i;
+const URL_REGEX = /^(https?:\/\/)?[\w.-]+\.[a-z]{2,}(\/[\w./-]*)?$/i;
 
 /**
  * Email validation regex
@@ -209,13 +209,4 @@ export const parseScannedQRCode = (
     content: data,
     displayContent,
   };
-};
-
-export default {
-  detectQRCodeType,
-  validateQRContent,
-  formatWiFiQRCode,
-  formatVCardQRCode,
-  formatQRContent,
-  parseScannedQRCode,
 };
