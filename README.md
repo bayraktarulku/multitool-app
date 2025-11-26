@@ -268,9 +268,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact
 
-**Ülkü Bayraktar** - [@bayraktarulku](https://github.com/bayraktarulku)
+**Ülkü Bayraktar** - [@bayraktarulku](https://github.com/bayraktarulku) 
 
 Project Link: [https://github.com/bayraktarulku/multitool-app](https://github.com/bayraktarulku/multitool-app)
+Note: This project was generated during a prompt experimentation session with GitHub Copilot.  
+All code has been produced automatically and is intended for testing and experimentation only.  
+Please review and adjust the code before executing or using it in any real-world context.
 
 ---
 
