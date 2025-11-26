@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Jest setup file
 
 jest.mock('react-native-vector-icons/MaterialCommunityIcons', () => 'Icon');

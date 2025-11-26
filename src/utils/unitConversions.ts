@@ -238,6 +238,9 @@ const timeUnits = [
 
 /**
  * Data conversions (base unit: byte)
+ * Note: Uses binary (base-2) prefixes for KB, MB, GB, TB (1024-based)
+ * as is common in computing for file sizes and memory.
+ * Bit to byte conversion is always 8 bits = 1 byte.
  */
 const dataUnits = [
   {name: 'Bit', symbol: 'b', toBase: (v: number) => v / 8, fromBase: (v: number) => v * 8},

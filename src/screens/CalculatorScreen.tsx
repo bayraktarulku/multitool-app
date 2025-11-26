@@ -2,12 +2,13 @@
  * Calculator Screen
  */
 
-import React, {useState, useCallback, useMemo} from 'react';
+import React, {useState, useCallback} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useTheme} from '../context/ThemeContext';
 import CalculatorButton from '../components/CalculatorButton';
 import {CalculatorState, CalculatorOperator} from '../types';
+import {CALCULATOR_BUTTONS} from '../utils/constants';
 import {
   getInitialCalculatorState,
   handleDigitInput,
@@ -73,18 +74,6 @@ const CalculatorScreen: React.FC = () => {
     return ['AC', 'C'].includes(value);
   }, []);
 
-  // Button rows
-  const buttonRows = useMemo(
-    () => [
-      ['AC', 'C', '%', '÷'],
-      ['7', '8', '9', '×'],
-      ['4', '5', '6', '-'],
-      ['1', '2', '3', '+'],
-      ['0', '.', '±', '='],
-    ],
-    [],
-  );
-
   return (
     <View style={[styles.container, {backgroundColor: theme.colors.background}]}>
       {/* Header with theme toggle */}
@@ -119,7 +108,7 @@ const CalculatorScreen: React.FC = () => {
 
       {/* Button Grid */}
       <View style={styles.buttonGrid}>
-        {buttonRows.map((row, rowIndex) => (
+        {CALCULATOR_BUTTONS.map((row, rowIndex) => (
           <View key={rowIndex} style={styles.buttonRow}>
             {row.map(value => (
               <CalculatorButton

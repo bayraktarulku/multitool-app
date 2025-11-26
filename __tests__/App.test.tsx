@@ -3,7 +3,6 @@
  */
 
 import 'react-native';
-import React from 'react';
 
 // Note: import explicitly to use the types shipped with jest.
 import {it, describe, expect} from '@jest/globals';
@@ -19,7 +18,11 @@ import {
 } from '../src/utils/calculatorLogic';
 
 // Import unit conversions for testing
-import {convertUnit, formatConversionResult, conversionCategories} from '../src/utils/unitConversions';
+import {
+  convertUnit,
+  formatConversionResult,
+  conversionCategories,
+} from '../src/utils/unitConversions';
 
 describe('Calculator Logic', () => {
   it('should perform basic addition', () => {
