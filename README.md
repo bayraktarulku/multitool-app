@@ -1,97 +1,232 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🛠️ MultitoolApp
 
-# Getting Started
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/bayraktarulku/multitool-app)
+[![React Native](https://img.shields.io/badge/React%20Native-0.82.1-blue.svg)](https://reactnative.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Modern ve kullanıcı dostu çoklu araç uygulaması. Hesap makinesi, birim çevirici ve QR kod oluşturucu - hepsi tek bir uygulamada!
 
-## Step 1: Start Metro
+![MultitoolApp Banner](https://via.placeholder.com/1200x400/6366f1/ffffff?text=MultitoolApp)
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## ✨ Özellikler
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### 🧮 Hesap Makinesi
+- ✅ Temel matematiksel işlemler (+, -, ×, ÷)
+- ✅ Yüzde hesaplama (%)
+- ✅ İşaret değiştirme (±)
+- ✅ Temizleme ve geri silme
+- ✅ Büyük ve okunabilir ekran
+- ✅ Modern buton grid layout
 
-```sh
-# Using npm
-npm start
+### 📏 Birim Çevirici
+- ✅ **4 Kategori**: Uzunluk, Ağırlık, Hacim, Sıcaklık
+- ✅ **28+ Birim**: Metre, kilometre, pound, litre, celsius ve daha fazlası
+- ✅ Anlık dönüşüm hesaplama
+- ✅ Kategori seçici
+- ✅ Birim swap özelliği
+- ✅ Modal birim seçimi
 
-# OR using Yarn
-yarn start
+### 📱 QR Kod Oluşturucu
+- ✅ Her türlü veri için QR kod oluşturma
+- ✅ 5 Hızlı şablon (Web, Email, Telefon, WhatsApp, WiFi)
+- ✅ 3 Boyut seçeneği (150px, 200px, 250px)
+- ✅ Paylaşma özelliği
+- ✅ Tema-aware QR renkleri
+
+### 🎨 Tema Sistemi
+- ✅ Dark/Light mode
+- ✅ Sistem temasını otomatik algılama
+- ✅ AsyncStorage ile tema tercihi kaydetme
+- ✅ Smooth geçişler
+- ✅ Modern Indigo/Purple gradient renk paleti
+- ✅ Tüm componentlerde tutarlı tema
+
+### 🧭 Navigation
+- ✅ Bottom Tab Navigation
+- ✅ 4 ana ekran (Calculator, Converter, QR Code, Settings)
+- ✅ Custom Ionicons
+- ✅ Active/Inactive states
+- ✅ Tema-aware navigation bar
+
+## 📱 Screenshots
+
+| Calculator | Converter | QR Code | Dark Mode |
+|------------|-----------|---------|-----------|
+| ![Calculator](https://via.placeholder.com/200x400/6366f1/ffffff?text=Calculator) | ![Converter](https://via.placeholder.com/200x400/6366f1/ffffff?text=Converter) | ![QR Code](https://via.placeholder.com/200x400/6366f1/ffffff?text=QR+Code) | ![Dark Mode](https://via.placeholder.com/200x400/1f2937/ffffff?text=Dark+Mode) |
+
+## 🚀 Başlangıç
+
+### Gereksinimler
+
+- Node.js >= 20
+- React Native CLI
+- Xcode 14+ (iOS için)
+- Android Studio (Android için)
+- CocoaPods (iOS için)
+
+### Kurulum
+
+```bash
+# Projeyi klonlayın
+git clone https://github.com/bayraktarulku/multitool-app.git
+cd multitool-app
+
+# Bağımlılıkları yükleyin
+npm install
+
+# iOS için pods yükleyin (sadece macOS)
+cd ios && pod install && cd ..
 ```
 
-## Step 2: Build and run your app
+### Çalıştırma
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
+# iOS Simülatör
 npm run ios
 
-# OR using Yarn
-yarn ios
+# Android Emülatör
+npm run android
+
+# Metro bundler
+npm start
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🏗️ Proje Yapısı
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+```
+MultitoolApp/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── calculator/      # Calculator-specific
+│   │   ├── converter/       # Converter-specific
+│   │   └── common/          # Shared components
+│   ├── screens/             # Screen components
+│   │   ├── CalculatorScreen.tsx
+│   │   ├── UnitConverterScreen.tsx
+│   │   ├── QRCodeScreen.tsx
+│   │   └── SettingsScreen.tsx
+│   ├── context/             # React Context (Theme)
+│   ├── types/               # TypeScript types
+│   └── utils/               # Utility functions
+├── android/                 # Android native
+├── ios/                     # iOS native
+└── App.tsx                  # App entry point
+```
 
-## Step 3: Modify your app
+## 🛠️ Teknolojiler
 
-Now that you have successfully run the app, let's make changes!
+- **React Native** 0.82.1 - Cross-platform framework
+- **TypeScript** 5.8.3 - Type-safe JavaScript
+- **React Navigation** 7 - Navigation library
+- **Context API** - State management
+- **AsyncStorage** - Persistent storage
+- **react-native-vector-icons** - Icon library
+- **react-native-qrcode-svg** - QR code generation
+- **react-native-svg** - SVG support
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 📋 Özellik Durumu
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+| Özellik | Durum | Versiyon |
+|---------|-------|----------|
+| Hesap Makinesi | ✅ Tamamlandı | v1.0.0 |
+| Birim Çevirici | ✅ Tamamlandı | v1.0.0 |
+| QR Kod Oluşturucu | ✅ Tamamlandı | v1.1.0 |
+| Tema Sistemi | ✅ Tamamlandı | v1.0.0 |
+| Hesaplama Geçmişi | 🔄 Planlanan | v1.2.0 |
+| QR Kod Okuyucu | 🔄 Planlanan | v1.2.0 |
+| Widget Desteği | 🔄 Planlanan | v1.2.0 |
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 🗺️ Roadmap
 
-## Congratulations! :tada:
+### v1.2.0 (Q1 2025)
+- [ ] QR Kod Okuyucu (camera ile)
+- [ ] Hesaplama geçmişi
+- [ ] Favori dönüşümler
+- [ ] Widget desteği
+- [ ] Haptic feedback
+- [ ] Daha fazla birim kategorileri
 
-You've successfully run and modified your React Native App. :partying_face:
+### v2.0.0 (Q3 2025)
+- [ ] Multi-language support
+- [ ] Cloud sync
+- [ ] Premium features
+- [ ] AI integration
 
-### Now what?
+Detaylı roadmap için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## 🧪 Test
 
-# Troubleshooting
+```bash
+# TypeScript type checking
+npx tsc --noEmit
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+# Linting
+npm run lint
 
-# Learn More
+# Unit tests
+npm test
 
-To learn more about React Native, take a look at the following resources:
+# Test script
+./test.sh
+```
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 📚 Dokümantasyon
+
+- [Quick Start Guide](QUICK_START.md) - Hızlı başlangıç
+- [Build Guide](BUILD_GUIDE.md) - Build ve deployment
+- [Contributing Guide](CONTRIBUTING.md) - Katkıda bulunma
+- [Project Structure](PROJECT_STRUCTURE.md) - Kod yapısı
+- [Feature: QR Code](FEATURE_QR_CODE.md) - QR özelliği detayları
+- [Store Assets](STORE_ASSETS.md) - Store hazırlık
+- [Release Notes](RELEASE_NOTES.md) - Versiyon notları
+
+## 🤝 Katkıda Bulunma
+
+Katkılarınızı bekliyoruz! Lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request açın
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 👨‍💻 Geliştirici
+
+**Ülkü Bayraktar**
+
+- GitHub: [@bayraktarulku](https://github.com/bayraktarulku)
+- Website: [multitoolapp.com](https://multitoolapp.com) (coming soon)
+
+## 🙏 Teşekkürler
+
+- React Native team
+- React Navigation team
+- Tüm açık kaynak katkıda bulunanlar
+
+## 📊 İstatistikler
+
+- **Toplam Satır Kodu**: ~5,500+
+- **Dosya Sayısı**: 70+
+- **Component Sayısı**: 13
+- **Screen Sayısı**: 4
+- **Dokümantasyon**: 15+ MD dosya
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=bayraktarulku/multitool-app&type=Date)](https://star-history.com/#bayraktarulku/multitool-app&Date)
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/bayraktarulku">Ülkü Bayraktar</a>
+</p>
+
+<p align="center">
+  ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+</p>
+
