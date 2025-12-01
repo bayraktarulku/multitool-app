@@ -1,98 +1,96 @@
-# 🛠️ MultitoolApp
+# MultitoolApp
 
 [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/bayraktarulku/multitool-app)
 [![React Native](https://img.shields.io/badge/React%20Native-0.82.1-blue.svg)](https://reactnative.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Modern ve kullanıcı dostu çoklu araç uygulaması. Hesap makinesi, birim çevirici ve QR kod oluşturucu - hepsi tek bir uygulamada!
+A modern and user-friendly multi-tool mobile application. Calculator, unit converter, and QR code generator - all in one app!
 
-![MultitoolApp Banner](https://via.placeholder.com/1200x400/6366f1/ffffff?text=MultitoolApp)
+## Features
 
-## ✨ Özellikler
+### Calculator
+- Basic mathematical operations (+, -, ×, ÷)
+- Percentage calculation (%)
+- Sign toggle (±)
+- Clear and backspace
+- Large and readable display
+- Modern button grid layout
 
-### 🧮 Hesap Makinesi
-- ✅ Temel matematiksel işlemler (+, -, ×, ÷)
-- ✅ Yüzde hesaplama (%)
-- ✅ İşaret değiştirme (±)
-- ✅ Temizleme ve geri silme
-- ✅ Büyük ve okunabilir ekran
-- ✅ Modern buton grid layout
+### Unit Converter
+- 4 Categories: Length, Weight, Volume, Temperature
+- 28+ Units: meter, kilometer, pound, liter, celsius, and more
+- Real-time conversion
+- Category selector
+- Unit swap feature
+- Modal unit selection
 
-### 📏 Birim Çevirici
-- ✅ **4 Kategori**: Uzunluk, Ağırlık, Hacim, Sıcaklık
-- ✅ **28+ Birim**: Metre, kilometre, pound, litre, celsius ve daha fazlası
-- ✅ Anlık dönüşüm hesaplama
-- ✅ Kategori seçici
-- ✅ Birim swap özelliği
-- ✅ Modal birim seçimi
+### QR Code Generator
+- Generate QR codes for any data
+- 5 Quick templates (Web, Email, Phone, WhatsApp, WiFi)
+- 3 Size options (150px, 200px, 250px)
+- Share functionality
+- Theme-aware QR colors
 
-### 📱 QR Kod Oluşturucu
-- ✅ Her türlü veri için QR kod oluşturma
-- ✅ 5 Hızlı şablon (Web, Email, Telefon, WhatsApp, WiFi)
-- ✅ 3 Boyut seçeneği (150px, 200px, 250px)
-- ✅ Paylaşma özelliği
-- ✅ Tema-aware QR renkleri
+### Theme System
+- Dark/Light mode
+- Automatic system theme detection
+- AsyncStorage theme preference persistence
+- Smooth transitions
+- Modern Indigo/Purple gradient color palette
+- Consistent theme across all components
 
-### 🎨 Tema Sistemi
-- ✅ Dark/Light mode
-- ✅ Sistem temasını otomatik algılama
-- ✅ AsyncStorage ile tema tercihi kaydetme
-- ✅ Smooth geçişler
-- ✅ Modern Indigo/Purple gradient renk paleti
-- ✅ Tüm componentlerde tutarlı tema
+### Navigation
+- Bottom Tab Navigation
+- 4 main screens (Calculator, Converter, QR Code, Settings)
+- Custom Ionicons
+- Active/Inactive states
+- Theme-aware navigation bar
 
-### 🧭 Navigation
-- ✅ Bottom Tab Navigation
-- ✅ 4 ana ekran (Calculator, Converter, QR Code, Settings)
-- ✅ Custom Ionicons
-- ✅ Active/Inactive states
-- ✅ Tema-aware navigation bar
-
-## 📱 Screenshots
+## Screenshots
 
 | Calculator | Converter | QR Code | Dark Mode |
 |------------|-----------|---------|-----------|
 | ![Calculator](https://via.placeholder.com/200x400/6366f1/ffffff?text=Calculator) | ![Converter](https://via.placeholder.com/200x400/6366f1/ffffff?text=Converter) | ![QR Code](https://via.placeholder.com/200x400/6366f1/ffffff?text=QR+Code) | ![Dark Mode](https://via.placeholder.com/200x400/1f2937/ffffff?text=Dark+Mode) |
 
-## 🚀 Başlangıç
+## Getting Started
 
-### Gereksinimler
+### Requirements
 
 - Node.js >= 20
 - React Native CLI
-- Xcode 14+ (iOS için)
-- Android Studio (Android için)
-- CocoaPods (iOS için)
+- Xcode 14+ (for iOS)
+- Android Studio (for Android)
+- CocoaPods (for iOS)
 
-### Kurulum
+### Installation
 
 ```bash
-# Projeyi klonlayın
+# Clone the repository
 git clone https://github.com/bayraktarulku/multitool-app.git
 cd multitool-app
 
-# Bağımlılıkları yükleyin
+# Install dependencies
 npm install
 
-# iOS için pods yükleyin (sadece macOS)
+# Install iOS pods (macOS only)
 cd ios && pod install && cd ..
 ```
 
-### Çalıştırma
+### Running
 
 ```bash
-# iOS Simülatör
+# iOS Simulator
 npm run ios
 
-# Android Emülatör
+# Android Emulator
 npm run android
 
 # Metro bundler
 npm start
 ```
 
-## 🏗️ Proje Yapısı
+## Project Structure
 
 ```
 MultitoolApp/
@@ -114,7 +112,7 @@ MultitoolApp/
 └── App.tsx                  # App entry point
 ```
 
-## 🛠️ Teknolojiler
+## Tech Stack
 
 - **React Native** 0.82.1 - Cross-platform framework
 - **TypeScript** 5.8.3 - Type-safe JavaScript
@@ -125,37 +123,37 @@ MultitoolApp/
 - **react-native-qrcode-svg** - QR code generation
 - **react-native-svg** - SVG support
 
-## 📋 Özellik Durumu
+## Feature Status
 
-| Özellik | Durum | Versiyon |
-|---------|-------|----------|
-| Hesap Makinesi | ✅ Tamamlandı | v1.0.0 |
-| Birim Çevirici | ✅ Tamamlandı | v1.0.0 |
-| QR Kod Oluşturucu | ✅ Tamamlandı | v1.1.0 |
-| Tema Sistemi | ✅ Tamamlandı | v1.0.0 |
-| Hesaplama Geçmişi | 🔄 Planlanan | v1.2.0 |
-| QR Kod Okuyucu | 🔄 Planlanan | v1.2.0 |
-| Widget Desteği | 🔄 Planlanan | v1.2.0 |
+| Feature | Status | Version |
+|---------|--------|----------|
+| Calculator | Complete | v1.0.0 |
+| Unit Converter | Complete | v1.0.0 |
+| QR Code Generator | Complete | v1.1.0 |
+| Theme System | Complete | v1.0.0 |
+| Calculation History | Planned | v1.2.0 |
+| QR Code Scanner | Planned | v1.2.0 |
+| Widget Support | Planned | v1.2.0 |
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### v1.2.0 (Q1 2025)
-- [ ] QR Kod Okuyucu (camera ile)
-- [ ] Hesaplama geçmişi
-- [ ] Favori dönüşümler
-- [ ] Widget desteği
-- [ ] Haptic feedback
-- [ ] Daha fazla birim kategorileri
+- QR Code Scanner (with camera)
+- Calculation history
+- Favorite conversions
+- Widget support
+- Haptic feedback
+- Additional unit categories
 
 ### v2.0.0 (Q3 2025)
-- [ ] Multi-language support
-- [ ] Cloud sync
-- [ ] Premium features
-- [ ] AI integration
+- Multi-language support
+- Cloud sync
+- Premium features
+- AI integration
 
-Detaylı roadmap için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+See [ROADMAP.md](ROADMAP.md) for detailed roadmap.
 
-## 🧪 Test
+## Testing
 
 ```bash
 # TypeScript type checking
@@ -171,62 +169,72 @@ npm test
 ./test.sh
 ```
 
-## 📚 Dokümantasyon
+## Documentation
 
-- [Quick Start Guide](QUICK_START.md) - Hızlı başlangıç
-- [Build Guide](BUILD_GUIDE.md) - Build ve deployment
-- [Contributing Guide](CONTRIBUTING.md) - Katkıda bulunma
-- [Project Structure](PROJECT_STRUCTURE.md) - Kod yapısı
-- [Feature: QR Code](FEATURE_QR_CODE.md) - QR özelliği detayları
-- [Store Assets](STORE_ASSETS.md) - Store hazırlık
-- [Release Notes](RELEASE_NOTES.md) - Versiyon notları
+- [Quick Start Guide](QUICK_START.md) - Quick start guide
+- [Build Guide](BUILD_GUIDE.md) - Build and deployment
+- [Contributing Guide](CONTRIBUTING.md) - How to contribute
+- [Project Structure](PROJECT_STRUCTURE.md) - Code structure
+- [Feature: QR Code](FEATURE_QR_CODE.md) - QR feature details
+- [Store Assets](STORE_ASSETS.md) - Store preparation
+- [Release Notes](RELEASE_NOTES.md) - Version notes
 
-## 🤝 Katkıda Bulunma
+## Contributing
 
-Katkılarınızı bekliyoruz! Lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request açın
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Geliştirici
+## Developer
 
-**Ülkü Bayraktar**
+**Ulku Bayraktar**
 
 - GitHub: [@bayraktarulku](https://github.com/bayraktarulku)
 - Website: [multitoolapp.com](https://multitoolapp.com) (coming soon)
 
-## 🙏 Teşekkürler
+## Acknowledgments
 
 - React Native team
 - React Navigation team
-- Tüm açık kaynak katkıda bulunanlar
+- All open-source contributors
 
-## 📊 İstatistikler
+## Statistics
 
-- **Toplam Satır Kodu**: ~5,500+
-- **Dosya Sayısı**: 70+
-- **Component Sayısı**: 13
-- **Screen Sayısı**: 4
-- **Dokümantasyon**: 15+ MD dosya
+- **Total Lines of Code**: ~5,500+
+- **Files**: 70+
+- **Components**: 13
+- **Screens**: 4
+- **Documentation**: 15+ MD files
 
-## ⭐ Star History
+---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=bayraktarulku/multitool-app&type=Date)](https://star-history.com/#bayraktarulku/multitool-app&Date)
+## Disclaimer
+
+**IMPORTANT:** This application was developed with AI assistance and has been tested in a development environment. Before using this code in production:
+
+1. Conduct thorough testing on real devices (iOS and Android)
+2. Perform security audits
+3. Review all code for your specific use case
+4. Test all features extensively
+5. Ensure compliance with app store guidelines
+
+The developers assume no liability for any issues arising from the use of this code. Use at your own risk and always test thoroughly before deployment.
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/bayraktarulku">Ülkü Bayraktar</a>
+  Made with support of AI technology by <a href="https://github.com/bayraktarulku">Ulku Bayraktar</a>
 </p>
 
 <p align="center">
-  ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+  Star this project if you find it useful!
 </p>
 

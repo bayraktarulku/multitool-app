@@ -1,323 +1,152 @@
-# 📱 Google Play Store Varlıkları
-
-Bu dosya, MultitoolApp'in Google Play Store'da yayınlanması için gerekli tüm varlıkları ve bilgileri içerir.
-
-## 📝 Store Listesi
-
-### Uygulama Adı
-**MultitoolApp - Hesap Makinesi & Çevirici**
-
-### Kısa Açıklama (80 karakter max)
-Modern hesap makinesi ve birim çevirici - Karanlık mod destekli
-
-### Tam Açıklama (4000 karakter max)
-
-```
-🛠️ MultitoolApp - Günlük İhtiyaçlarınız İçin Tek Uygulama
-
-MultitoolApp, günlük hayatınızda ihtiyaç duyduğunuz temel araçları modern ve kullanıcı dostu bir arayüzde sunar. Hesap makinesi ve birim çevirici özelliklerini tek bir uygulamada bulabilirsiniz.
-
-✨ ÖZELLİKLER
-
-🧮 HESAP MAKİNESİ
-• Temel matematiksel işlemler (+, -, ×, ÷)
-• Yüzde hesaplama
-• İşaret değiştirme (pozitif/negatif)
-• Büyük ve okunması kolay ekran
-• Hızlı ve akıcı kullanım
-
-📏 BİRİM ÇEVİRİCİ
-Anlık dönüşüm yapabileceğiniz 4 farklı kategori:
-
-• Uzunluk: metre, kilometre, santimetre, milimetre, mil, fit, inç
-• Ağırlık: kilogram, gram, ton, pound, ons
-• Hacim: litre, mililitre, galon, fincan
-• Sıcaklık: Celsius, Fahrenheit, Kelvin
-
-🎨 MODERN TASARIM
-• Karanlık ve aydınlık tema desteği
-• Göz yormayan renkler
-• Smooth animasyonlar ve geçişler
-• Sezgisel kullanıcı arayüzü
-• Material Design prensipleri
-
-⚡ PERFORMANS
-• Hızlı başlatma
-• Düşük pil tüketimi
-• Minimal bellek kullanımı
-• Offline çalışma
-• Küçük uygulama boyutu
-
-🔒 GİZLİLİK
-• İnternet bağlantısı gerektirmez
-• Veri toplamaz
-• Reklamsız deneyim
-• Açık kaynak
-
-🌟 NEDEN MULTİTOOLAPP?
-
-✓ Basit ve kullanımı kolay
-✓ Güncel ve modern tasarım
-✓ Hızlı ve güvenilir
-✓ Türkçe dil desteği
-✓ Sürekli güncellenir
-✓ Topluluk destekli
-
-📱 KİMLER KULLANMALI?
-
-• Öğrenciler - ödevler ve hesaplamalar için
-• Mühendisler - hızlı dönüşümler için
-• Aşçılar - tarif ölçülerini çevirmek için
-• Seyahat edenler - birim dönüşümleri için
-• Herkes - günlük hesaplamalar için
-
-🚀 GELECEKTEKİ ÖZELLİKLER
-
-Yakında gelecek özellikler:
-• Hesaplama geçmişi
-• Favori dönüşümler
-• Widget desteği
-• Daha fazla birim kategorisi
-• Bilimsel hesap makinesi
-
-💬 GERİ BİLDİRİM
-
-Önerileriniz ve geri bildirimleriniz bizim için çok değerli! Uygulama hakkındaki düşüncelerinizi bizimle paylaşın.
-
-GitHub: github.com/bayraktarulku/MultitoolApp
-E-posta: support@multitoolapp.com
-
-⭐ Uygulamayı beğendiyseniz lütfen 5 yıldız verin ve yorum yazın!
-
-#HesapMakinesi #BirimÇevirici #MultiTool #Araçlar #Hesaplama
-```
-
+# Store Assets Guide
+## App Icon
+**Size:** 512x512px
+**Format:** PNG with alpha channel
+**Design:** Modern gradient (indigo to purple)
+**Content:** Calculator + QR code combination
+**Tools:**
+- Canva Pro
+- Figma
+- Adobe Illustrator
 ---
-
-## 🖼️ Görsel Varlıklar
-
-### Uygulama İkonu
-
-**Gereksinimler:**
-- 512 x 512 px (High-res icon)
-- 32-bit PNG (alpha channel ile)
-- Max 1024KB
-- Square, no rounded corners
-
-**Tasarım Önerileri:**
-- Ana renk: Mor/İndigo gradient (#6366f1 - #8b5cf6)
-- İkon: Hesap makinesi + dönüşüm oklarını içeren modern icon
-- Basit ve tanınabilir
-- Her boyutta okunabilir
-
-### Feature Graphic
-
-**Gereksinimler:**
-- 1024 x 500 px
-- JPG veya 24-bit PNG (no alpha)
-- Maks 1MB
-
-**İçerik:**
-- Uygulama adı: "MultitoolApp"
-- Alt başlık: "Hesap Makinesi & Birim Çevirici"
-- Karanlık ve aydınlık tema görselleri
-- Modern ve profesyonel görünüm
-
-### Ekran Görüntüleri
-
-**Gereksinimler:**
-- Minimum 2, maksimum 8 adet
-- JPEG veya 24-bit PNG
-- Min boyut: 320px
-- Max boyut: 3840px
-- 16:9 veya 9:16 aspect ratio
-
-**Öneri Sırası:**
-1. Ana hesap makinesi ekranı (light mode)
-2. Hesap makinesi ekranı (dark mode)
-3. Birim çevirici - Uzunluk kategorisi
-4. Birim çevirici - Sıcaklık dönüşümü
-5. Ayarlar ekranı - Tema değiştirme
-6. Birim kategorileri görünümü
-7. Tüm özelliklerin bir arada göründüğü collage
-
-**Her ekran görüntüsü için:**
-- Başlık ekle (örn: "Modern Hesap Makinesi")
-- Status bar'ı temizle
-- Gerçek kullanım senaryosu göster
-- Hem iOS hem Android için hazırla
-
-### Promo Video (Opsiyonel)
-
-**Gereksinimler:**
-- 30 saniye - 2 dakika
-- YouTube linki
-- Full HD (1920x1080) minimum
-
-**İçerik:**
-- 0-5 sn: Logo animasyonu
-- 5-15 sn: Hesap makinesi özellikleri
-- 15-25 sn: Birim çevirici özellikleri
-- 25-30 sn: Tema değiştirme ve closing
-
+## Screenshots
+**Required:** 7-8 screenshots
+1. Hero Shot - All features overview
+2. Calculator - Light mode
+3. Calculator - Dark mode
+4. Unit Converter - Conversion example
+5. QR Code - Generation example
+6. Settings - Theme toggle
+7. Navigation - 4 tabs
+**Tools:**
+- iOS Simulator (Cmd+S)
+- Screely (device frames)
+- Placeit (mockups)
 ---
-
-## 🏷️ Kategorizasyon
-
-### Ana Kategori
-**Araçlar (Tools)**
-
-### Alt Kategori
-- Hesap Makineleri
-- Üretkenlik
-
-### Etiketler
+## Store Listings
+### Title (30 characters)
 ```
-hesap makinesi
-calculator
-birim çevirici
-unit converter
-araçlar
-tools
-matematik
-çevirici
-converter
-ölçü birimleri
-hesaplama
-multitool
+Multitool: Calculator+
 ```
-
+### Subtitle (30 characters - iOS only)
+```
+Calculator, Converter, QR
+```
+### Description
+```
+MultitoolApp - All essential tools in one app!
+4 POWERFUL TOOLS:
+- Calculator - Fast and easy calculations
+- Unit Converter - 28+ units across 4 categories
+- QR Code - Create and# Store Assets Guide
+## App Icon
+**Size:** 512x512px
+**Format:** PNG with alpha channel
+**Design:*of## App Icon
+**Size:nt**Size:** er**Format:** PNG wiat**Design:** Modern gradient (indiwo**Content:** Calculator + QR code combinations
+**Tools:**
+- Canva Pro
+- Figma
+- Adobe Illus -- Canva Pe
+- Figma
+- OW- Adob##---
+## Screenshots10##ch**Required:**``1. Hero Shot - All features de2. Calculator - Light mode
+3. Calcuen3. Calculator - Dark mode
+*4. Unit Converter - Convea5. QR Code - Generation example
+6. Se. 6. Settings - Theme toggle
+7. er7. Navigation - 4 tabs
+**to**Tools:**
+- iOS Simula- iOS Sims
+- Screely (device frameo- Placeit (mockups)
 ---
-
-## 🌍 Yerelleştirme
-
-### Desteklenen Diller (v1.0)
-- 🇹🇷 Türkçe (Varsayılan)
-- 🇬🇧 İngilizce
-
-### Gelecek Sürümlerde (v2.0)
-- 🇩🇪 Almanca
-- 🇫🇷 Fransızca
-- 🇪🇸 İspanyolca
-- 🇮🇹 İtalyanca
-- 🇷🇺 Rusça
-
+30---
+## Store Listi**## 0### Title (30 chti```
+Multitool: CalculatoatMu d```
+### Subtitle (30  g##er```
+Calculator, Converter, QR
+```
+### 5sCaDa```
+### Description
+```
+ "##wn```
+MultitoolA--Mu##4 POWERFUL TOOLS:
+- Calculator - Fast and easns- Calculator - Fs.- Unit Converter - 28+ units across 4 cace- QR Code - Create and# Store Assets Guide
+## Ali## App Icon
+**Size:** 512x512px
+**Format:io**Size:** F
+**Format:** PNG wi"
+cd /Users/ulkubayraktar/Desktop/bayraktarulku-github/MultitoolApp && cat > RELEASE_NOTES.md << 'EOF'
+# Release Notes
+## Version 1.1.0
+### New Features
+**QR Code Generator**
+- Generate QR codes for URLs, text, contacts
+- Quick templates (Web, Email, Phone, WhatsApp, WiFi)
+- Adjustable sizes (150px, 200px, 250px)
+- Share functionality
+- Theme-aware colors (dark/light mode)
+### Improvements
+- Added 4th navigation tab
+- Updated Settings screen with new feature info
+- Consistent UI/UX across all screens
+### Technical
+- react-native-qrcode-svg integration
+- react-native-svg native support
+- iOS build optimization
 ---
-
-## 📊 Store Listing Kontrol Listesi
-
-### ✅ Tamamlanması Gerekenler
-
-- [ ] High-res icon (512x512)
-- [ ] Feature graphic (1024x500)
-- [ ] En az 2 ekran görüntüsü (Phone)
-- [ ] En az 2 ekran görüntüsü (Tablet - opsiyonel)
-- [ ] Kısa açıklama (max 80 karakter)
-- [ ] Tam açıklama (max 4000 karakter)
-- [ ] Uygulama başlığı
-- [ ] İletişim e-postası
-- [ ] Gizlilik politikası URL'i
-- [ ] Kategori seçimi
-- [ ] İçerik derecelendirmesi
-- [ ] Fiyatlandırma (Ücretsiz)
-
-### 📱 Teknik Gereksinimler
-
-- [ ] Signed APK/AAB oluşturma
-- [ ] Min SDK version belirtme
-- [ ] Target SDK version güncel
-- [ ] İzinler listesi hazırlama
-- [ ] App signing key'i güvenli saklama
-- [ ] Release notes hazırlama
-
+## Version 1.0.1
+### Bug Fixes
+**Calculator Display Issue**
+- Fixed button layout (added flex: 1)
+- Improved display size and readability
+- Replaced ScrollView with View for better layout
+**Navigation Icons**
+- Fixed icons not displaying on iOS
+- Added UIAppFonts array to Info.plist
+- Linked react-native-vector-icons properly
+### Improvements
+- Better calculator button layout
+- Larger display area
+- Mo# Release Notes
+## Version 1.1.0
+### New Features
+**QR Code Generator**
+- Generate QR codes for URL×## Version 1.1ta### New Featureog**QR Code Generr - Generate QR codes e - Quick templates (Web, Email, Phone, WhatsLe- Adjustable sizes (150px, 200px, 250px)
+- Share fun-t- Share functionality
+- Theme-aware colit- Theme-aware colorse ### Improvements
+- Added 4th navigatihe- Added 4th navAs- Updated Settings screenSm- Consistent UI/UX across all screens
+### Techvi### Technical
+- react-native-qrcode- s- react-natiul- react-native-svg native support
+- ic- iOS build optimization
 ---
-
-## 📝 Release Notes Şablonu
-
-### v1.0.0 - İlk Sürüm
-
-```
-🎉 MultitoolApp İlk Sürümü Yayında!
-
-✨ Neler Var:
-• Modern hesap makinesi
-• 4 kategoride birim çevirici
-• Karanlık/Aydınlık tema
-• Temiz ve sezgisel arayüz
-
-Geri bildirimlerinizi bekliyoruz!
-```
-
-### Gelecek Güncellemeler İçin Şablon
-
-```
-🚀 Versiyon X.X.X
-
-✨ Yeni Özellikler:
-• [Özellik 1]
-• [Özellik 2]
-
-🐛 Düzeltmeler:
-• [Bug fix 1]
-• [Bug fix 2]
-
-⚡ İyileştirmeler:
-• [İyileştirme 1]
-• [İyileştirme 2]
-
-Teşekkürler! ⭐
-```
-
+## 
+#---
+## Version 1.0.1
+##S ##.0### Bug Fixes
+*dr**Calculatorad- Fixed button layout (addeSt- Improved display size and readabilpt- Replaced ScrollView with View for bera**Navigation Icons**
+- Fixed icons not displayinco- Fixed icons not dve- Added UIAppFonts array to Info.ps - Linked react-native-vector-icons pror### Improvements
+- Better calculator buttolo- Better calculnt- Larger display area
+- Mo# Relety- Mo# Release Notes
+ch## Version 1.1.0
+cd /Users/ulkubayraktar/Desktop/bayraktarulku-github/MultitoolApp && cat > BUGFIX_CALCULATOR_DISPLAY.md << 'EOF'
+# Bug Fix: Calculator Display Issue
+## Problem
+Calculator button numbers were not visible or very small on screen.
+## Root Cause
+- Missing `flex: 1` on calculator buttons
+- ScrollView causing layout conflicts
+- Insufficient display minHeight
+## Solution
+### CalculatorButton.tsx
+Added `flex: 1` to button styles for proper sizing in row layout.
+### CalculatorDisplay.tsx
+Increased minHeight from 120px to 140px and added text minHeight.
+### CalculatorScreen.tsx
+Replaced ScrollView with View for fixed layout (calculator doesn't need scrolling).
+## Result
+- Buttons now properly sized and visible
+- Display area larger and more readable
+- Layout is responsive and consistent
 ---
-
-## 🎨 Marka Renkleri
-
-```
-Primary: #6366f1 (Indigo)
-Secondary: #8b5cf6 (Purple)
-Success: #10b981 (Green)
-Error: #ef4444 (Red)
-
-Light Theme:
-- Background: #f8f9fa
-- Text: #1f2937
-
-Dark Theme:
-- Background: #111827
-- Text: #f9fafb
-```
-
----
-
-## 📞 İletişim Bilgileri
-
-**Geliştirici:** Ülkü Bayraktar
-**E-posta:** support@multitoolapp.com
-**Website:** https://multitoolapp.com (oluşturulacak)
-**GitHub:** https://github.com/bayraktarulku/MultitoolApp
-**Gizlilik Politikası:** https://multitoolapp.com/privacy (oluşturulacak)
-
----
-
-## ⚖️ Yasal
-
-### Gizlilik Politikası Özeti
-```
-MultitoolApp:
-- Kişisel veri toplamaz
-- İnternet izni gerektirmez
-- Üçüncü taraf kütüphaneler kullanmaz
-- Reklam göstermez
-- Veri paylaşmaz
-```
-
-### Telif Hakları
-```
-© 2025 MultitoolApp. Tüm hakları saklıdır.
-MIT License altında açık kaynak kodludur.
-```
-
----
-
-**Not:** Bu doküman, uygulama Google Play Store'da yayınlanmadan önce tamamlanmalı ve güncel tutulmalıdır.
-
+## Disclaimer
+This fix was implemented with AI assistance. Test thoroughly on multiple devices.

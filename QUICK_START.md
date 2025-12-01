@@ -1,6 +1,107 @@
-# 🚀 MultitoolApp - Quick Start Guide
+# MultitoolApp - Quick Start Guide
 
-Projeyi hızlıca çalıştırmak için bu kısa rehberi takip edin!
+## Installation
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Install iOS Pods (macOS only)
+
+```bash
+cd ios && pod install && cd ..
+```
+
+### 3. Run the App
+
+**iOS:**
+```bash
+npm run ios
+```
+
+**Android:**
+```bash
+npm run android
+```
+
+---
+
+## Features Overview
+
+### Calculator
+- Basic operations: +, -, ×, ÷
+- Percentage: %
+- Sign toggle: ±
+- Clear: C
+
+### Unit Converter
+- **Length**: m, km, cm, mile, ft, inch
+- **Weight**: kg, g, ton, lb, oz
+- **Volume**: L, mL, gallon, cup
+- **Temperature**: °C, °F, K
+
+### QR Code Generator
+- Generate QR codes for URLs, text, contacts
+- Quick templates: Web, Email, Phone, WhatsApp, WiFi
+- Size options: 150px, 200px, 250px
+- Share functionality
+
+### Theme System
+- Dark mode
+- Light mode
+- System preference
+
+---
+
+## Testing
+
+```bash
+# Type checking
+npx tsc --noEmit
+
+# Run tests
+npm test
+```
+
+---
+
+## Troubleshooting
+
+**iOS build fails:**
+```bash
+cd ios
+pod deintegrate
+pod install
+cd ..
+npm run ios
+```
+
+**Metro bundler issues:**
+```bash
+npm start -- --reset-cache
+```
+
+**Clean build:**
+```bash
+# iOS
+cd ios
+xcodebuild clean
+cd ..
+
+# Android
+cd android
+./gradlew clean
+cd ..
+```
+
+---
+
+## Disclaimer
+
+This application was developed with AI assistance. Thoroughly test before production use.
+
 
 ## ⚡ 5 Dakikada Başlat
 

@@ -1,6 +1,174 @@
-# 🤝 Katkıda Bulunma Rehberi
+# Contributing Guide
 
-MultitoolApp projesine katkıda bulunmak istediğiniz için teşekkür ederiz! Bu rehber, katkı sürecini kolaylaştırmak için hazırlanmıştır.
+Thank you for considering contributing to MultitoolApp!
+
+## Code of Conduct
+
+- Be respectful and constructive
+- Welcome different perspectives
+- Provide constructive feedback
+- No harassment or personal attacks
+
+---
+
+## How to Contribute
+
+### Types of Contributions
+
+1. **Bug Reports**
+   - Report bugs you find
+   - Include reproduction steps
+
+2. **Feature Suggestions**
+   - Share new feature ideas
+   - Describe use cases
+
+3. **Code Contributions**
+   - Bug fixes
+   - New features
+   - Performance improvements
+   - Test coverage
+
+4. **Documentation**
+   - README improvements
+   - Code comments
+   - Examples and guides
+
+---
+
+## Development Setup
+
+### Fork and Clone
+
+```bash
+# Fork the repository on GitHub
+# Then clone your fork
+git clone https://github.com/YOUR_USERNAME/MultitoolApp.git
+cd MultitoolApp
+```
+
+### Install Dependencies
+
+```bash
+npm install
+cd ios && pod install && cd ..
+```
+
+### Create a Branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+---
+
+## Code Standards
+
+### TypeScript
+
+- Use TypeScript for all new code
+- Define proper types and interfaces
+- Avoid `any` type
+
+### Code Style
+
+- Follow existing code style
+- Use ESLint and Prettier
+- Run `npm run lint` before committing
+
+### Components
+
+- Use functional components with hooks
+- Keep components small and focused
+- Extract reusable logic into custom hooks
+
+---
+
+## Commit Messages
+
+Use conventional commit format:
+
+```
+type(scope): description
+
+[optional body]
+[optional footer]
+```
+
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `test`: Tests
+- `chore`: Maintenance
+
+**Examples:**
+```
+feat(calculator): add scientific mode
+fix(converter): correct temperature conversion
+docs(readme): update installation steps
+```
+
+---
+
+## Pull Request Process
+
+1. **Update Documentation**
+   - Update README if needed
+   - Add comments to complex code
+
+2. **Test Your Changes**
+   ```bash
+   npm test
+   npx tsc --noEmit
+   npm run lint
+   ```
+
+3. **Create Pull Request**
+   - Clear title and description
+   - Reference related issues
+   - Include screenshots for UI changes
+
+4. **Review Process**
+   - Respond to feedback
+   - Make requested changes
+   - Wait for approval
+
+---
+
+## Issue Reporting
+
+### Bug Reports
+
+Include:
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Screenshots (if applicable)
+- Device/OS information
+
+### Feature Requests
+
+Include:
+- Clear description
+- Use case
+- Mockups (if applicable)
+
+---
+
+## Questions?
+
+- Open an issue for discussion
+- Check existing issues first
+
+---
+
+## Disclaimer
+
+This project was developed with AI assistance. All contributions will be reviewed thoroughly. Contributors should test their changes extensively before submitting.
+
 
 ## 📋 İçindekiler
 

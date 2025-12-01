@@ -1,6 +1,198 @@
-# 🏗️ MultitoolApp - Build ve Deployment Guide
+# MultitoolApp - Build and Deployment Guide
 
-Bu kılavuz, MultitoolApp uygulamasını geliştirme, test etme ve yayınlama süreçlerini detaylı olarak açıklar.
+## Development Environment Setup
+
+### Requirements
+
+- Node.js v20 or higher
+- npm or yarn
+- Watchman (recommended for macOS)
+- Xcode 14+ (for iOS)
+- Android Studio (for Android)
+- CocoaPods (for iOS)
+- JDK 17 (for Android)
+
+### macOS Setup
+
+```bash
+# Install tools via Homebrew
+brew install node
+brew install watchman
+
+# Install CocoaPods
+sudo gem install cocoapods
+
+# Install React Native CLI
+npm install -g react-native-cli
+```
+
+### Project Setup
+
+```bash
+# Clone repository
+git clone https://github.com/bayraktarulku/MultitoolApp.git
+cd MultitoolApp
+
+# Install dependencies
+npm install
+
+# Install iOS dependencies (macOS only)
+cd ios && pod install && cd ..
+```
+
+---
+
+## Running the Project
+
+### Start Metro Bundler
+
+```bash
+# Start Metro
+npm start
+
+# Or with cache reset
+npm start -- --reset-cache
+```
+
+### Run on iOS
+
+```bash
+# Default simulator
+npm run ios
+
+# Specific device
+npm run ios -- --simulator="iPhone 15 Pro"
+
+# Physical device
+npm run ios -- --device
+```
+
+### Run on Android
+
+```bash
+# Default emulator
+npm run android
+
+# Specific device
+npm run android -- --deviceId=<device_id>
+```
+
+---
+
+## Building for Production
+
+### iOS Production Build
+
+```bash
+# 1. Open Xcode
+open ios/MultitoolApp.xcworkspace
+
+# 2. Select "Any iOS Device (arm64)" as target
+# 3. Product > Archive
+# 4. Distribute App > App Store Connect
+```
+
+### Android Production Build
+
+```bash
+cd android
+
+# Generate release APK
+./gradlew assembleRelease
+
+# Generate release AAB (for Play Store)
+./gradlew bundleRelease
+
+# Output:
+# APK: android/app/build/outputs/apk/release/app-release.apk
+# AAB: android/app/build/outputs/bundle/release/app-release.aab
+```
+
+---
+
+## Testing
+
+### Type Checking
+
+```bash
+npx tsc --noEmit
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+### Unit Tests
+
+```bash
+npm test
+```
+
+---
+
+## Deployment
+
+### iOS App Store
+
+1. Configure signing in Xcode
+2. Archive the app
+3. Upload to App Store Connect
+4. Submit for review
+
+### Google Play Store
+
+1. Generate signed AAB
+2. Upload to Play Console
+3. Create release
+4. Submit for review
+
+---
+
+## Troubleshooting
+
+### iOS Issues
+
+**Pod install fails:**
+```bash
+cd ios
+pod deintegrate
+pod install
+cd ..
+```
+
+**Build fails:**
+```bash
+cd ios
+xcodebuild clean
+cd ..
+```
+
+### Android Issues
+
+**Gradle build fails:**
+```bash
+cd android
+./gradlew clean
+cd ..
+```
+
+**Emulator not starting:**
+```bash
+# List available emulators
+emulator -list-avds
+
+# Start specific emulator
+emulator -avd <avd_name>
+```
+
+---
+
+## Disclaimer
+
+This application was developed with AI assistance. Test thoroughly on multiple devices before releasing to production. Ensure all features work as expected and comply with app store guidelines.
+
 
 ## 📋 İçindekiler
 
